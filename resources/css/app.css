@@ -1,0 +1,68 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+html{
+    scroll-padding-top: 11vh;
+}
+
+body{
+    
+    background: linear-gradient(126deg, rgba(241,249,255,1) 0%, rgba(254,246,255,1) 100%);
+    background-attachment: fixed;
+    overflow-x: none;
+
+}
+
+.sideNav::-webkit-scrollbar{
+    display: none;
+}
+
+.sideNav{
+    -ms-overflow-style: none;
+    scrollbar-width: none;  
+}
+
+.hero{
+    background-color: #FDE5E5;
+}
+
+.asset{
+    width: 40%;
+}
+
+.subject{
+    width: 25vw;
+}
+
+.shop-cart{
+    width: 20vw;
+}
+
+.guest-products{
+    width: 80vw;
+}
+
+@media only screen and (max-width: 1280px)  {
+    .hero img{
+        width: 40vw;
+    }
+    
+    .subject{
+        width: 90vw;
+    }
+
+    .asset{
+        margin-top: 4vh;
+        width: 50vw;
+    }
+
+    .asset-1{
+        visibility: hidden;
+    }
+
+    .shop-cart{
+        width: 60vw;
+        height: 100vh;
+    }
+  }
